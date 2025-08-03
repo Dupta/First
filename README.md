@@ -11,7 +11,7 @@
   "ps1_hostname": "divyansh.dev",
   "ps1_username": "guest",
   "resume_url": "../Divyansh_Gupta_2213101.pdf",
-  "repo": "https://github.com/Dupta/Portfolio",
+  "repo": "https://github.com/Dupta/Liveterm",
   
   "colors": {
     "light": {
