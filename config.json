@@ -1,39 +1,35 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readmeUrl": "",
+  "title": "Divyansh's Terminal",
+  "name": "Divyansh",
+  "ascii": "Welcome to my terminal portfolio!",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "Dupta",
+    "linkedin": "divyansh-gupta-798072250"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
-  "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
-  },
+  "email": "divyanshgupta6170@gmail.com",
+  "ps1_hostname": "Let's go",
+  "repo": "https://github.com/Dupta/LiveTerm",
+
+  "ps1_username": "divyansh.dev",
+  "resume_url": "Divyansh_Gupta_2213101.pdf",
+  "non_terminal_url": "https://example.com",
   "colors": {
-    "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
-      "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
-    },
     "dark": {
-      "background": "#2E3440",
-      "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
-      "green": "#A3BE8C",
-      "gray": "#88C0D0",
-      "blue": "#EBCB8B",
-      "red": "#BF616A"
+      "background": "#0ffff",
+      "text": "#00ff00",
+      "promptSymbol": "$",
+      "command": "#00ffcc",
+      "output": "#ffffff",
+      "error": "#ff0033"
+    },
+    "light": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "promptSymbol": ">",
+      "command": "#0066cc",
+      "output": "#333333",
+      "error": "#cc0000"
     }
   }
 }
