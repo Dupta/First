@@ -1,35 +1,26 @@
 {
-  "readmeUrl": "",
-  "title": "Divyansh's Terminal",
+  "title": "divyansh-terminal",
   "name": "Divyansh",
   "ascii": "Welcome to my terminal portfolio!",
+  "ps1_hostname": "divyansh",
+  "ps1_username": "about",
   "social": {
     "github": "Dupta",
     "linkedin": "divyansh-gupta-798072250"
   },
   "email": "divyanshgupta6170@gmail.com",
-  "ps1_hostname": "Let's go",
-  "repo": "https://github.com/Dupta/LiveTerm",
-
-  "ps1_username": "divyansh.dev",
   "resume_url": "Divyansh_Gupta_2213101.pdf",
-  "non_terminal_url": "https://example.com",
+  "non_terminal_url": "https://yourwebsite.com",
   "colors": {
-    "dark": {
-      "background": "#0ffff",
-      "text": "#00ff00",
-      "promptSymbol": "$",
-      "command": "#00ffcc",
-      "output": "#ffffff",
-      "error": "#ff0033"
-    },
     "light": {
       "background": "#ffffff",
-      "text": "#000000",
-      "promptSymbol": ">",
-      "command": "#0066cc",
-      "output": "#333333",
-      "error": "#cc0000"
+      "text": "#000000",    
+      "promptSymbol": ">"
+    },
+    "dark": {
+      "background": "grey",
+      "text": "#00ff00",
+      "promptSymbol": "$"
     }
   }
 }
