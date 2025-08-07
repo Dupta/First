@@ -10,7 +10,17 @@
 
 * {
   font-family: 'Hack', monospace;
+  user-select: text;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+input, a, button {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
 
 html,
 body,

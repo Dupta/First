@@ -20,6 +20,7 @@ export const quote = async (args: string[]): Promise<string> => {
   return data.quote;
 };
 
+
 export const readme = async (args: string[]): Promise<string> => {
   const readme = await getReadme();
   return `Opening GitHub README...\n

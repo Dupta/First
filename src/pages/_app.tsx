@@ -22,7 +22,13 @@ const App = ({ Component, pageProps }) => {
 
       <div
         className="text-light-foreground dark:text-dark-foreground min-w-max text-xs md:min-w-full md:text-base"
-        onClick={onClickAnywhere}
+         onClick={(e) => {
+    // Prevent refocus if you're selecting text
+        const selection = window.getSelection();
+        if (selection && selection.toString().length === 0) {
+        inputRef.current?.focus();
+    }
+  }}
       >
         <main className="bg-light-background dark:bg-dark-background w-full h-full p-2">
           <Component {...pageProps} inputRef={inputRef} />

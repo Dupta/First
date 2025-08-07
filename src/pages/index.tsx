@@ -6,13 +6,14 @@ import { useHistory } from '../components/history/hook';
 import { History } from '../components/history/History';
 import { banner } from '../utils/bin';
 
+import { motion } from 'framer-motion';
 
 interface IndexPageProps {
   inputRef: React.MutableRefObject<HTMLInputElement>;
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
-  const containerRef = React.useRef(null);
+  const containerRef = React.useRef<HTMLDivElement>(null);
   const {
     history,
     command,
@@ -23,18 +24,32 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
     setLastCommandIndex,
   } = useHistory([]);
 
-  const init = React.useCallback(() => setHistory(banner()), []);
-
+  // Set the banner only once when history is empty
   React.useEffect(() => {
-    init();
-  }, [init]);
+    if (history.length === 0) {
+      setHistory(banner());
+    }
+  }, []); // Runs once on initial render
 
+  // Focus input when history updates
   React.useEffect(() => {
     if (inputRef.current) {
       inputRef.current.scrollIntoView();
       inputRef.current.focus({ preventScroll: true });
     }
-  }, [history]);
+  }, [history, inputRef]);
+
+
+
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+>
+  {/* Your component */}
+</motion.div>
+
+
 
   return (
     <>
@@ -60,9 +75,8 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
         </div>
       </div>
     </>
+    
   );
 };
 
-
 export default IndexPage;
-
